@@ -1,0 +1,106 @@
+.App{
+
+    /*align-items: ;*/
+}
+
+.warp{
+    /*color: #ffffff;*/
+    max-width: 980px;
+    margin: auto;
+    /*width: 980px;*/
+    /*text-align: center;*/
+}
+.logo{
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
+.H-divider{
+    float: left;
+    margin-top:15px ;
+    height: 35px;
+    margin-left: 0;
+}
+.H-menu{
+    float: left;
+    margin-top: 8px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.H-menu a{
+    color: white !important;
+}
+.H-menu a:hover{
+    color: #1890ff !important;
+}
+#footer{
+    /*position: fixed;*/
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    /*bottom: 0;*/
+}
+.main .warp{
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#menuIndxe li{
+    text-align: center;
+    margin-right: -1px;
+    transition: none;
+    border-right: 3px solid rgba(0,0,0,0);
+}
+
+#menuIndxe li:hover,
+#menuIndxe .ant-menu-item-selected{
+    background: #e6f7ff;
+    border-right-color: #1890ff;
+}
+.pic > .ant-list-item-meta-avatar{
+    margin:5px 10px;
+
+}
+.ant-card-body img{
+    width: 300px;
+}
+.listItem{
+    padding-left: 10px;
+    display: block;
+}
+.header{
+    position: relative;
+}
+.header .popo{
+
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+}
+@media all and (max-width: 767px){
+    .menuu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .H-divider{
+        display: none;
+    }
+    .H-menu{
+        display: none;
+    }
+
+
+    #menuIndxe li:hover,
+    #menuIndxe .ant-menu-item-selected{
+        background: #e6f7ff;
+        border-right-color: transparent;
+        border-bottom-color: #1890ff;
+    }
+    #menuIndxe li:hover{
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid #1890ff;
+    }
+}
